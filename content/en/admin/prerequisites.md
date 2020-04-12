@@ -22,7 +22,11 @@ apt update && apt upgrade -y
 
 ## Install fail2ban so it blocks repeated login attempts
 
-Edit `/etc/fail2ban/jail.local` and put this inside:
+```bash
+apt install fail2ban
+```
+
+Then, edit `/etc/fail2ban/jail.local` and put this inside:
 
 ```text
 [DEFAULT]
